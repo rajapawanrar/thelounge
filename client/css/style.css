@@ -517,6 +517,15 @@ kbd {
 	width: 220px;
 }
 
+#sidebar .logo,
+#sidebar .logo-inverted {
+	height: 45px;
+}
+
+#sidebar .logo {
+	display: none;
+}
+
 #viewport.menu-open #sidebar {
 	display: none;
 	will-change: transform;
@@ -1548,7 +1557,7 @@ part/quit messages where we don't load previews (adds a blank line otherwise) */
 	flex-grow: 0;
 }
 
-.logo-inverted {
+#windows .logo-inverted {
 	display: none; /* In dark themes, inverted logo must be used instead */
 }
 
@@ -1846,8 +1855,7 @@ part/quit messages where we don't load previews (adds a blank line otherwise) */
 	border: 1px solid transparent;
 	transition: border-color 0.2s;
 
-	/* TODO: Get rid of this once networks can be edited
-					 See https://github.com/thelounge/thelounge/pull/2229 */
+	/* WIP WIP WIP !!REMOVE BEFORE MERGING!! WIP WIP WIP */
 	display: none;
 }
 

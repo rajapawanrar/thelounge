@@ -22,11 +22,11 @@ body {
 	color: #ccc;
 }
 
-.logo {
+#windows .logo {
 	display: none;
 }
 
-.logo-inverted {
+#windows .logo-inverted {
 	display: inline-block;
 }
 
