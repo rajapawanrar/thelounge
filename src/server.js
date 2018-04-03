@@ -598,7 +598,7 @@ function getClientConfiguration(network) {
 		config.version = pkg.version;
 		config.gitCommit = Helper.getGitCommit();
 		config.themes = themes.getAll();
-		config.defaults.nick = config.defaults.nick.replace(/%/g, () => Math.floor(Math.random() * 10));
+		config.defaults.nick = Helper.getDefaultNick();
 	}
 
 	return config;
