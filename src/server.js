@@ -578,6 +578,7 @@ function getServerConfiguration() {
 	const config = _.clone(Helper.config);
 
 	config.stylesheets = packages.getStylesheets();
+	config.bustCache = Buffer.from(Helper.getVersion()).toString("hex");
 
 	return config;
 }

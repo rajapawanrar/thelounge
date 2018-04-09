@@ -5,9 +5,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 
-	<link rel="preload" as="script" href="js/bundle.vendor.js">
-	<link rel="preload" as="script" href="js/bundle.js">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="preload" as="script" href="js/bundle.vendor.js?v=<%- bustCache %>">
+	<link rel="preload" as="script" href="js/bundle.js?v=<%- bustCache %>">
+	<link rel="stylesheet" href="css/style.css?v=<%- bustCache %>">
 	<link id="theme" rel="stylesheet" href="themes/<%- theme %>.css" data-server-theme="<%- theme %>">
 	<% _.forEach(stylesheets, function(css) { %>
 		<link rel="stylesheet" href="packages/<%- css %>">
@@ -87,7 +87,7 @@
 
 		<div id="image-viewer"></div>
 
-		<script src="js/bundle.vendor.js"></script>
-		<script src="js/bundle.js"></script>
+		<script src="js/bundle.vendor.js?v=<%- bustCache %>"></script>
+		<script src="js/bundle.js?v=<%- bustCache %>"></script>
 	</body>
 </html>
